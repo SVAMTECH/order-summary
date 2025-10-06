@@ -1,0 +1,139 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: hsl(225, 100%, 94%)
+
+}
+
+.con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.main {
+  background-color: white;
+  border-radius: 15px;
+  max-width: 350px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+
+.top-img img {
+  width: 100%;
+  display: block;
+}
+
+.text {
+  padding: 25px;
+}
+
+h2 {
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 10px;
+}
+
+.desc {
+  color: hsl(224, 23%, 55%);
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+
+.plan {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.plan-left {
+  display: flex;
+  align-items: center;
+}
+
+.plan-left img {
+  width: 40px;
+  margin-right: 15px;
+}
+
+.plan-info h4 {
+  color: hsl(223, 47%, 23%);
+  margin: 0;
+  font-size: 14px;
+}
+
+.plan-info p {
+  margin: 0;
+  color: hsl(224, 23%, 55%);
+  font-size: 13px;
+}
+
+.change {
+  font-size: 13px;
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+}
+
+.change:hover {
+  text-decoration: none;
+}
+
+.btn {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  border: none;
+  padding: 12px 0;
+  border-radius: 10px;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(56, 41, 224, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: hsl(245, 65%, 45%);
+}
+
+
+.cancel {
+  color: hsl(224, 23%, 55%);
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media (max-width: 500px) {
+  .main {
+    max-width: 90%;
+  }
+
+  .plan {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .plan-left {
+    flex-direction: row;
+  }
+
+  .change {
+    align-self: flex-end;
+  }
+}
